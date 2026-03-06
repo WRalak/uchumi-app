@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-gray-50: #f9fafb;
+  --color-primary-600: #2563eb;
+  /* Define all your custom colors and theme values here */
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 300ms;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-700);
+  }
+}
